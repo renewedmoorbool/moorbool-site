@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    cursor: crosshair;
 }
 
 #w-introduction {
-    background-color: #6c0a0a;
+    background-color: #016FB9;
     color: 	#ffffff;
 
     width: 100%;
@@ -21,13 +25,26 @@
     align-items: center;
 
     animation: easingOpacity 2s ease;
+
 }
+
+
+.creator-name::first-letter {
+    color: #FF9505;
+    
+}
+
+
 
 .creator-name {
     letter-spacing: 2px;
     position: relative;
     animation-delay: 2.1s;
     animation: descendFromSky 2s ease;
+
+    font-size: 70px;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: 5px 5px #353531;
 
     margin-bottom: 10px;
 }
@@ -36,6 +53,32 @@
     position: relative;
     animation-delay: 4.2s ease;
     animation: easeFromLeft 2s ease;
+    text-shadow: 2px 2px rgb(98, 87, 87);
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 38px;
+}
+
+.scroll-down-button {
+    background: none;
+    color: white;
+    
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 20px;
+
+    position: relative;
+    top: 80px;
+}
+
+.scroll-down-button:hover {
+    background-color: white;
+    color: #016FB9;
+    
+    cursor: pointer;
+    font-weight: bold;
 }
 
 @keyframes easingOpacity {
@@ -60,7 +103,7 @@
 
 @keyframes easeFromLeft {
     from {
-        right: -100vh;
+        right: -100vw;
     }
 
     to {
