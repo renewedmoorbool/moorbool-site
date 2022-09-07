@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#w-introduction {
+    background-color: #6c0a0a;
+    color: 	#ffffff;
+
+    width: 100%;
+    height: 100vh;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    animation: easingOpacity 2s ease;
+}
+
+.creator-name {
+    letter-spacing: 2px;
+    position: relative;
+    animation-delay: 2.1s;
+    animation: descendFromSky 2s ease;
+
+    margin-bottom: 10px;
+}
+
+.creator-desc {
+    position: relative;
+    animation-delay: 4.2s ease;
+    animation: easeFromLeft 2s ease;
+}
+
+@keyframes easingOpacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes descendFromSky {
+    from {
+        top: -100vh;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes easeFromLeft {
+    from {
+        right: -100vh;
+    }
+
+    to {
+        right: 0;
+    }
+}

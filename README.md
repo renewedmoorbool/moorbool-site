@@ -1,2 +1,3 @@
 # moorbool-site
-A website of mine for the description of my person 
+A website realised in order to show my web programming skills. 
+
